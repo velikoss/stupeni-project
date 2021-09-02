@@ -1,41 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
+
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Sleep Calculator</title>
+    
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
+  
+  </head>
+  
+  <body translate="no">
     <div class="container sleepcalculator">
+  
+    <table class="row">
+      <tr class="col-md-5">
+  
+        <td class="wake-up">
+          <img src="sleep.gif" width="35%">
+          <h4>Wake Up Time</h4>
+  
+          <p class="small">Select the time you want to wake up.</p>
+          
+          <input data-customclass="form-control" type="text" id="sleepcalc" data-format="hh:mm" data-template="hh : mm" name="datetime" value="06:30" style="display: none;">
+        </td>
+  
+      <td class="col-md-6">
+  
+        <h4>You Should Go To Bed At:</h4>
+  
         <div class="row">
-          <div class="col-md-5">
-            <div class="wake-up">
-              <h4>Проснитесь в нужное вам время.</h4>
-              <p class="small">Выберете время, во сколько вы хотите проснуться.</p>
-              <input data-customClass="form-control" type="text" id="sleepcalc" data-format="h:mm a" data-template="hh : mm a" name="datetime" value="6:30 am">
-            </div>
+          <div class="col-md-12">
+            <h3 id="result1" class="resulttime animated">9:15 pm</h3>
+            <p>This gives you 9 hours of sleep and 6 sleep cycles.</p>
           </div>
-          <div class="col-md-6">
-            <h4>Вы должны лечь спать в:</h4>
-            <div class="row">
-              <div class="col-md-12">
-                <h3 id="result1" class="resulttime animated"></h3>
-                <p>Это даёт вам 9 часов сна и 6 циклов сна.</p>
-              </div>
-              <div class="col-md-12">
-                <h3 id="result2" class="resulttime"></h3>
-                <p>Это даёт вам 7.5 часов сна и 5 циклов сна.</p>
-              </div>
-              <div class="col-md-12">
-                <h3 id="result3" class="resulttime"></h3>
-                <p>Это даёт вам 6 часов сна и 4 циклов сна.</p>
-              </div>
-            </div>
+  
+          <div class="col-md-12">
+            <h3 id="result2" class="resulttime">10:45 pm</h3>
+            <p>This gives you 7.5 hours of sleep and 5 sleep cycles.</p>
+          </div>
+  
+          <div class="col-md-12">
+            <h3 id="result3" class="resulttime">12:15 am</h3>
+            <p>This gives you 6 hours of sleep and 4 sleep cycles.</p>
           </div>
         </div>
-      <script src="index.js"></script>
-</body>
-</html>
+  
+  
+     </td>
+    </tr>
+    </table>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://vitalets.github.io/combodate/momentjs/moment.min.2.5.0.js"></script>
+    <script src="https://vitalets.github.io/combodate/combodate.js"></script>
+    <script src="index.js"></script>
+</div></body></html>
