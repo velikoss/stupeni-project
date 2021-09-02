@@ -1,4 +1,4 @@
-# 😴 Dev branch of Sleep Timer
+# 😴 Main branch of Sleep Timer
 Project for Stupeni Uspeha
 
 Проект для Сутпени Успеха. Сделал backend я. Frontend на подходе
