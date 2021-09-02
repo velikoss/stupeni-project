@@ -1,9 +1,257 @@
-div{
-    background-color: rgb(250, 171, 0);
-    width: 300px;
+body {
+    background-color:#E5E5E5;
+}
+#div1{
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+}
+#div2{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+#div3{
+    height: 0px;
+    width: 1000px;
+    left: 20px;
+    top: 90px;
+    border: 1px solid black;
+}
+#div4{
+    position: absolute;
+    width: 375px;
+    height: 722px;
+    left: 0px;
+    top: 90px;
+    overflow-y: scroll;
+}
+#blok_1{
     height: 100px;
+    width: 320px;; 
+    border-radius: 20px;
+    position: absolute;
+    left: 20px;
+    right: 1%;
+    top: 100px;
+    bottom: 20px;
+    background: #24D0DB;
+    border-radius: 20px;
+}
+#blockTimer_1{
+    position: absolute;
+    left: 11%;
+    top: 17%;
+    font-family: Open Sans;
 
-    margin-top: 20px;
+    font-size: 25px;
+    line-height: 49px;
+    color: #000000;
+}
+#blockCicle_1{
+    position: absolute;
+    left: 11%;
+    top: 25%;
+    font-family: Open Sans;
+    font-size: 25px;
+    line-height: 49px;
+    color: #000000;
+}
+#Time_1{
+    position: absolute;
+    left: 65%;
+    top: 25%;
+    font-family: Open Sans;
+    font-size: 25px;
+    line-height: 49px;
+    color: #000000;
+}
+#blok_2{
+    height: 100px;
+    width: 320px;; 
+    position: absolute;
+    left: 20px;
+    right: 1%;
+    top: 240px;
+    background: #24D0DB;
+    border-radius: 20px;
+}
+#blockTimer_2{
+    position: absolute;
+    left: 11%;
+    top: 40%;
+    font-family: Open Sans;
 
-    border-radius: 5px;
+    font-size: 25px;
+    line-height: 49px;
+    color: #000000;
+}
+#blockCicle_2{
+    position: absolute;
+    left: 11%;
+    top: 48%;
+    font-family: Open Sans;
+    font-size: 25px;
+    line-height: 49px;
+    color: #000000;
+}
+#Time_2{
+    position: absolute;
+    left: 65%;
+    top: 48%;
+    font-family: Open Sans;
+    font-size: 25px;
+    line-height: 49px;
+    color: #000000;
+}
+#blok_3{
+    height: 100px;
+    width: 320px;; 
+    position: absolute;
+    left: 20px;
+    right: 1%;
+    top: 375px;
+    background: #24D0DB;
+    border-radius: 20px;
+}
+#blockTimer_3{
+    position: absolute;
+    left: 11%;
+    top: 62%;
+    font-family: Open Sans;
+
+    font-size: 25px;
+    line-height: 49px;
+    color: #000000;
+}
+#blockCicle_3{
+    position: absolute;
+    left: 11%;
+    top: 70%;
+    font-family: Open Sans;
+    font-size: 25px;
+    line-height: 49px;
+    color: #000000;
+}
+#Time_3{
+    position: absolute;
+    left: 65%;
+    top: 70%;
+    font-family: Open Sans;
+    font-size: 25px;
+    line-height: 49px;
+    color: #000000;
+}
+#blok_4{
+    height: 100px;
+    width: 320px;; 
+    position: absolute;
+    left: 20px;
+    right: 1%;
+    top: 511px;
+    background: #24D0DB;
+    border-radius: 20px;
+}
+#blockTimer_4{
+    position: absolute;
+    left: 11%;
+    top: 85%;
+    font-family: Open Sans;
+
+    font-size: 25px;
+    line-height: 49px;
+    color: #000000;
+}
+#blockCicle_4{
+    position: absolute;
+    left: 11%;
+    top: 93%;
+    font-family: Open Sans;
+    font-size: 25px;
+    line-height: 49px;
+    color: #000000;
+}
+#Time_4{
+    position: absolute;
+    left: 65%;
+    top: 93%;
+    font-family: Open Sans;
+    font-size: 25px;
+    line-height: 49px;
+    color: #000000;
+}
+#blok_5{
+    height: 100px;
+    width: 320px;; 
+    position: absolute;
+    left: 20px;
+    right: 1%;
+    top: 644px;
+    background: #24D0DB;
+    border-radius: 20px;
+}
+#blockTimer_5{
+    position: absolute;
+    left: 11%;
+    top: 107%;
+    font-family: Open Sans;
+
+    font-size: 25px;
+    line-height: 49px;
+    color: #000000;
+}
+#blockCicle_5{
+    position: absolute;
+    left: 11%;
+    top: 115%;
+    font-family: Open Sans;
+    font-size: 25px;
+    line-height: 49px;
+    color: #000000;
+}
+#Time_5{
+    position: absolute;
+    left: 65%;
+    top: 115%;
+    font-family: Open Sans;
+    font-size: 25px;
+    line-height: 49px;
+    color: #000000;
+}
+#blok_6{
+    height: 100px;
+    width: 320px;; 
+    position: absolute;
+    left: 20px;
+    right: 1%;
+    top: 779px;
+    background: #24D0DB;
+    border-radius: 20px;
+}
+#blockTimer_6{
+    position: absolute;
+    left: 11%;
+    top: 130%;
+    font-family: Open Sans;
+    font-size: 25px;
+    line-height: 49px;
+    color: #000000;
+}
+#blockCicle_6{
+    position: absolute;
+    left: 11%;
+    top: 137%;
+    font-family: Open Sans;
+    font-size: 25px;
+    line-height: 49px;
+    color: #000000;
+}
+#Time_6{
+    position: absolute;
+    left: 65%;
+    top: 137%;
+    font-family: Open Sans;
+    font-size: 25px;
+    line-height: 49px;
+    color: #000000;
 }
