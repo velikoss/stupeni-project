@@ -1,38 +1,43 @@
-$(function () {
+function on(date){  
+    for (let i = 4; i < 7; i++) {
+      let time = new Date()
+      let [hours, minutes] = date.split(':');
   
-    $('#sleepcalc').combodate({
-      customClass: 'form-control' });
+      time.setHours(+hours); // Set the hours, using implicit type coercion
+      time.setMinutes(minutes); // You can pass Number or String. It doesn't really matter
   
+      let div = document.getElementById("stage"+i)
+        switch(i){
+          case 4:
+            time.setMinutes(time.getMinutes()-375-15)
+            break
+          case 5:
+            time.setMinutes(time.getMinutes()-465-15)
+            break
+          case 6:
+            time.setMinutes(time.getMinutes()-555-15)
+            break  
+       }
+       div.innerHTML = String(time.getHours().toString().length<2?"0"+time.getHours():time.getHours()) + ':' + String(time.getMinutes().toString().length<2?"0"+time.getMinutes():time.getMinutes())
+      }
+  }
   
-    $('#sleepcalc, .hour, .minute').change(function () {
-      updatetime();
-    });
+  window.onload = function() {
   
+    new Rolldate({
   
-    function updatetime() {
-      var interval = moment.duration("01:30:00");
-      var secondinterval = moment.duration("03:00:00");
+      el:'#times',
+      format: 'hh:mm',
+      confirm: function(date){
+        on(date)
+      },
+      lang: { 
+        title: 'Выберите время', 
+        cancel: 'Отмена', 
+        confirm: 'Применить', 
+        hour: '', 
+        min: ''
+      }
   
-      var selectedTime = $('#sleepcalc').combodate('getValue', null);
-  
-      var time = moment.duration("09:15:00");
-      var date = moment(selectedTime);
-      date.subtract(time);
-  
-      result1 = moment(date).format("h:mm");
-      result2 = moment(date).add(interval).format("h:mm");
-      result3 = moment(date).add(secondinterval).format("h:mm");
-  
-      $('#result1').text(result1).addClass('loaded');
-      $('#result2').text(result2).addClass('loaded');
-      $('#result3').text(result3).addClass('loaded');
-  
-      setTimeout(function () {
-        $('#result1, #result2, #result3').removeClass('loaded');
-      }, 1500);
-  
-    }
-  
-    updatetime();
-  
-  });
+    })
+  }
